@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata>
+    <id>Sara-Logging</id>
+    <version>1.2.0</version>
+    <title>Sara Logging C#</title>
+    <authors>Sara LaFleur</authors>
+    <owners>Sara LaFleur</owners>
+    <projectUrl>https://github.com/saralafleur/Sara-Logging</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/saralafleur/Sara-Common/master/Avatar4.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Sara-Logging is a thread-safe abstract logging framework.  With a pipeline that can feed multiple log writers.  Log messages can be processed asynchronously on a background thread, freeing up the producer.  Or synchronously on the producer thread, in the case of critical messages.  Unhandled exceptions are captured and feed into the pipeline.  The following log Types exist Error, Warning, Trace, Debug, Information, SystemInfo, SystemWarning, and SystemError.  '.Config' files are used to configure Log Writers without the need to re-compile.  Archiving and Event logging is supported.  Each log entry contains ThreadId, TimeStamp, Class, Method, Type, Message, Exception (Optional), Log Type.
+      
+Sara.Logging contains 4 Log Writers that implement ILogWriter; FileStreamLogWriter, DebugOutputWriter, ConsoleWriter, and WindowsSystemEventWriter.  DebugOutputWriter directs log messages to the Debug Output.  ConsoleWriter directs log messages to the Console styled with color.  FileStreamLogWriter stores log messages in a file.  Log files are self-maintained based on days old and configured storage.  A User can archive one or more files into a zip for compact storage or remote transfer.  WindowsSystemEventWritter sends log messages to the Windows Event Log.
+
+Implement ILogWriter to build your own Writers.
+    </description>
+    <releaseNotes>Initial version.</releaseNotes>
+    <copyright>Sara LaFleur, 2019</copyright>
+    <tags></tags>
+    <license type="file">LICENSE.txt</license>
+    <repository type="git" url="https://github.com/saralafleur/Sara-Logging.git"/>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.IO.Compression.FileSystem" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.Numerics" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework="net48" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework="net48" />
+    </frameworkAssemblies>
+
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Sara-Common" version="[1.2.0,2)" />
+        <dependency id="System.IO.Compression" version="4.3.0" />
+        <dependency id="System.Security.AccessControl" version="4.6.0" />
+        <dependency id="System.Security.Permissions" version="4.6.0" />
+        <dependency id="System.Security.Principal.Windows" version="4.6.0" />
+      </group>
+      <group targetFramework="netcoreapp2.2">
+        <dependency id="Sara-Common" version="[1.2.0,2)" />
+        <dependency id="System.IO.Compression" version="4.3.0" />
+        <dependency id="System.Security.AccessControl" version="4.6.0" />
+        <dependency id="System.Security.Permissions" version="4.6.0" />
+        <dependency id="System.Security.Principal.Windows" version="4.6.0" />
+      </group>
+      <group targetFramework="net48">
+        <dependency id="Sara-Common" version="[1.2.0,2)" />
+        <dependency id="System.IO.Compression" version="4.3.0" />
+        <dependency id="System.Security.AccessControl" version="4.6.0" />
+        <dependency id="System.Security.Permissions" version="4.6.0" />
+        <dependency id="System.Security.Principal.Windows" version="4.6.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Sara.NETFramework.Logging.Writers -->
+	<file src=".NET Framework\Sara.NETFramework.Logging.Writers\bin\Release\Sara.NETFramework.Logging.Writers.dll" target="lib\net48" />
+    <file src=".NET Framework\Sara.NETFramework.Logging.Writers\bin\Release\Sara.NETFramework.Logging.Writers.pdb" target="lib\net48" />
+  
+    <!-- Sara.NETStandard.Logging -->
+    <file src=".NET Standard\Sara.NETStandard.Logging\bin\Release\net48\Sara.NETStandard.Logging.dll" target="lib\net48" />
+    <file src=".NET Standard\Sara.NETStandard.Logging\bin\Release\net48\Sara.NETStandard.Logging.pdb" target="lib\net48" />
+    <file src=".NET Standard\Sara.NETStandard.Logging\bin\Release\netcoreapp2.2\Sara.NETStandard.Logging.dll" target="lib\netcoreapp2.2" />
+    <file src=".NET Standard\Sara.NETStandard.Logging\bin\Release\netcoreapp2.2\Sara.NETStandard.Logging.pdb" target="lib\netcoreapp2.2" />
+    <file src=".NET Standard\Sara.NETStandard.Logging\bin\Release\netstandard2.0\Sara.NETStandard.Logging.dll" target="lib\netstandard2.0" />
+    <file src=".NET Standard\Sara.NETStandard.Logging\bin\Release\netstandard2.0\Sara.NETStandard.Logging.pdb" target="lib\netstandard2.0" />
+
+    <!-- Sara.NETStandard.Logging.Writers -->
+    <file src=".NET Standard\Sara.NETStandard.Logging.Writers\bin\Release\net48\Sara.NETStandard.Logging.Writers.dll" target="lib\net48" />
+    <file src=".NET Standard\Sara.NETStandard.Logging.Writers\bin\Release\net48\Sara.NETStandard.Logging.Writers.pdb" target="lib\net48" />
+    <file src=".NET Standard\Sara.NETStandard.Logging.Writers\bin\Release\netcoreapp2.2\Sara.NETStandard.Logging.Writers.dll" target="lib\netcoreapp2.2" />
+    <file src=".NET Standard\Sara.NETStandard.Logging.Writers\bin\Release\netcoreapp2.2\Sara.NETStandard.Logging.Writers.pdb" target="lib\netcoreapp2.2" />
+    <file src=".NET Standard\Sara.NETStandard.Logging.Writers\bin\Release\netstandard2.0\Sara.NETStandard.Logging.Writers.dll" target="lib\netstandard2.0" />
+    <file src=".NET Standard\Sara.NETStandard.Logging.Writers\bin\Release\netstandard2.0\Sara.NETStandard.Logging.Writers.pdb" target="lib\netstandard2.0" />
+
+    <!-- License -->
+    <file src="LICENSE.txt" target="" />
+  </files>
+</package>

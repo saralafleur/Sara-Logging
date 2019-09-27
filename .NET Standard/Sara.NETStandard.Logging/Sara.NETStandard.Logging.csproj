@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net48;netcoreapp2.2</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Copyright>Sara LaFleur, 2019</Copyright>
+    <Authors>Sara LaFleur</Authors>
+    <Company>Sara</Company>
+    <Description></Description>
+    <Version>1.0.3</Version>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/saralafleur/Sara-Common/master/Avatar4.jpg</PackageIconUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIconUrl></PackageIconUrl>
+  </PropertyGroup>
+  <Target Name="CopyPackage" AfterTargets="Pack">
+    <Copy SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(SolutionDir)NuGet Output\" />
+  </Target>
+
+  <ItemGroup>
+    <None Remove="Readme.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sara-Common" Version="1.1.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+  </ItemGroup>
+  <Target Name="CopyPackage" AfterTargets="Pack">
+    <Copy SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(SolutionDir)NuGet Output\" />
+  </Target>
+
+</Project>

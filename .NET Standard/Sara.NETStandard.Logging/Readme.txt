@@ -1,0 +1,27 @@
+﻿Sara.Common.Logging
+- Concerns
+	- Thread Safe
+	- Multi-Target Output
+	- Log Fields
+		- ClassName
+		- Method
+		- LogType : [Error, Warning, Trace, Debug, Info, SystemInfo, SystemWarning, SystemError]
+		- Message
+		- Exception
+	- Self Maintain
+		- Log Size
+		- Disk Usuage
+		- Days Old
+	- System Event
+		- Support for SystemInfo, SystemWarning, SystemError
+	- App.config Sections for configuring the LogWriters
+	- BackgroundThreadQueue to remove delay in log processing
+	- Missing
+		- Detailed Debug Level
+		- Auto Archive to Backup or Aggeration Source
+Sara.Common.Logging.Writer
+- Concerns	
+	- Seperation of Concern
+		- Archive
+		- Writers (Different Targets)
+		- System Logging

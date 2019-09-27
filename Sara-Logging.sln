@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0EE31D1E-8E66-4075-9536-478C199D1DF7}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		Sara-Logging.nuspec = Sara-Logging.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET Framework", ".NET Framework", "{99DA33C7-F2C0-48F6-9674-3A0F829612CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET Standard", ".NET Standard", "{C7D0DD90-8709-4FD8-B8BB-BCD47F4070B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandbox", "Sandbox", "{46BAE7A4-00C4-4137-8748-49A3ED525C6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sara.NETFramework.Logging.Writers", ".NET Framework\Sara.NETFramework.Logging.Writers\Sara.NETFramework.Logging.Writers.csproj", "{773F9A23-0158-44C0-B9CA-838EACF7BC59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sara.NETStandard.Logging", ".NET Standard\Sara.NETStandard.Logging\Sara.NETStandard.Logging.csproj", "{E9535DF3-805C-4CD2-BBCD-997638862D26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sara.NETStandard.Logging.Writers", ".NET Standard\Sara.NETStandard.Logging.Writers\Sara.NETStandard.Logging.Writers.csproj", "{7565D852-15FB-4DD4-8676-F9623F09A8DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sara.Sandbox.Logging", "Sandbox\Sara.Sandbox.Logging\Sara.Sandbox.Logging.csproj", "{BD4AE70A-8B8C-4758-9CB1-04BE8306D0DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGet Empty", "NuGet Empty\NuGet Empty.csproj", "{7D7357A3-3816-4CD4-9B1D-D3B0D78B4017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{773F9A23-0158-44C0-B9CA-838EACF7BC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773F9A23-0158-44C0-B9CA-838EACF7BC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773F9A23-0158-44C0-B9CA-838EACF7BC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773F9A23-0158-44C0-B9CA-838EACF7BC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9535DF3-805C-4CD2-BBCD-997638862D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9535DF3-805C-4CD2-BBCD-997638862D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9535DF3-805C-4CD2-BBCD-997638862D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9535DF3-805C-4CD2-BBCD-997638862D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7565D852-15FB-4DD4-8676-F9623F09A8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7565D852-15FB-4DD4-8676-F9623F09A8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7565D852-15FB-4DD4-8676-F9623F09A8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7565D852-15FB-4DD4-8676-F9623F09A8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD4AE70A-8B8C-4758-9CB1-04BE8306D0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD4AE70A-8B8C-4758-9CB1-04BE8306D0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD4AE70A-8B8C-4758-9CB1-04BE8306D0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD4AE70A-8B8C-4758-9CB1-04BE8306D0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D7357A3-3816-4CD4-9B1D-D3B0D78B4017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7357A3-3816-4CD4-9B1D-D3B0D78B4017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7357A3-3816-4CD4-9B1D-D3B0D78B4017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7357A3-3816-4CD4-9B1D-D3B0D78B4017}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{773F9A23-0158-44C0-B9CA-838EACF7BC59} = {99DA33C7-F2C0-48F6-9674-3A0F829612CD}
+		{E9535DF3-805C-4CD2-BBCD-997638862D26} = {C7D0DD90-8709-4FD8-B8BB-BCD47F4070B1}
+		{7565D852-15FB-4DD4-8676-F9623F09A8DC} = {C7D0DD90-8709-4FD8-B8BB-BCD47F4070B1}
+		{BD4AE70A-8B8C-4758-9CB1-04BE8306D0DC} = {46BAE7A4-00C4-4137-8748-49A3ED525C6D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {676FBD67-2EB1-49A3-96B6-E0643469930F}
+	EndGlobalSection
+EndGlobal
