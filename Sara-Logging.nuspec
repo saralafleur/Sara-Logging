@@ -16,7 +16,7 @@
 
       Implement ILogWriter to build your own Writers.
     </description>
-    <releaseNotes>Initial version.</releaseNotes>
+    <releaseNotes>Added Log.WriteEnter and Log.WriteExit as helper methods for tracing Method enter and exit.</releaseNotes>
     <copyright>(c) 2019, Sara LaFleur</copyright>
     <tags></tags>
     <license type="file">LICENSE.txt</license>
