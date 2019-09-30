@@ -137,6 +137,10 @@ namespace Sara.Logging
         {
             Write(message, className, operationName, LogEntryType.Trace);
         }
+        public static void WriteWarning(string message, string className = "", string operationName = "")
+        {
+            Write(message, className, operationName, LogEntryType.Warning);
+        }
         public static void WriteError(string message, string className = "", string operationName = "", Exception exception = null)
         {
             Write(message, className, operationName, LogEntryType.Error, exception);
