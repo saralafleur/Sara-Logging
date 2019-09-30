@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
   <metadata>
     <id>Sara-Logging</id>
-    <version>1.2.5</version>
+    <version>1.2.6</version>
     <title>Sara Logging C#</title>
     <authors>Sara LaFleur</authors>
     <owners>Sara LaFleur</owners>

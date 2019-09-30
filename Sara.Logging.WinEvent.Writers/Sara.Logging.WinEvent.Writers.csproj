@@ -39,10 +39,6 @@
     <Compile Include="WindowsSystemEventWriter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\.NET Standard\Sara.NETStandard.Logging\Sara.NETStandard.Logging.csproj">
-      <Project>{bf3fd031-e2b3-4839-87a5-e4ec70dc2016}</Project>
-      <Name>Sara.NETStandard.Logging</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sara.Logging\Sara.Logging.csproj">
       <Project>{48A6975E-39F8-4C27-B598-1F54D8E8036F}</Project>
       <Name>Sara.Logging</Name>

@@ -109,6 +109,24 @@ namespace Sara.Logging
         #endregion
 
         #region Write Methods
+        /// <summary>
+        /// Used to trace when you enter a method.
+        /// </summary>
+        public static void WriteEnter(string className = "", string operationName = "")
+        {
+            className = string.IsNullOrEmpty(className) ? "?" : className;
+            operationName = string.IsNullOrEmpty(operationName) ? "?" : operationName;
+            Write($"Entering {className}.{operationName}", className, operationName, LogEntryType.Trace);
+        }
+        /// <summary>
+        /// Used to trace when you exit a method.
+        /// </summary>
+        public static void WriteExit(string className = "", string operationName = "")
+        {
+            className = string.IsNullOrEmpty(className) ? "?" : className;
+            operationName = string.IsNullOrEmpty(operationName) ? "?" : operationName;
+            Write($"Exiting {className}.{operationName}", className, operationName, LogEntryType.Trace);
+        }
         public static void Write(string message, string className = "", string operationName = "", LogEntryType logType = LogEntryType.Information, Exception exception = null)
         {
             if (!_ignoreDebug && logType == LogEntryType.Debug) return;
