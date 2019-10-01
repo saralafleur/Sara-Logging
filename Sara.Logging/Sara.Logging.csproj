@@ -30,8 +30,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sara-Common" Version="1.2.5" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sara-Common\Sara.Common.Ext\Sara.Common.Ext.csproj" />
+    <ProjectReference Include="..\..\Sara-Common\Sara.Common\Sara.Common.csproj" />
+    <ProjectReference Include="..\..\Sara-Common\Sara.ReadOnlyDictionary\Sara.ReadOnlyDictionary.csproj" />
   </ItemGroup>
   <Target Name="CopyPackage" AfterTargets="Pack">
     <Copy SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(SolutionDir)NuGet Output\" />

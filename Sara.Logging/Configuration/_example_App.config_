@@ -12,7 +12,7 @@
 
   <Logging IgnoreDebug="True">
     <writers>
-      <writer name="WindowEvents" logWriterType="WindowsSystemEventWriter" UseBackgroundThreadQueue="false" loadDll="Sara.NETFramework.Logging.Writers.dll"/>
+      <writer name="WindowEvents" logWriterType="WindowsSystemEventWriter" UseBackgroundThreadQueue="false" loadDll="Sara.Logging.Writers.dll"/>
       <writer name="Console" logWriterType="ConsoleWriter" UseBackgroundThreadQueue="false" loadDll="Sara.NETStandard.Logging.Writers.dll"/>
       <writer name="Debug" logWriterType="DebugOutputWriter" UseBackgroundThreadQueue="true" loadDll="Sara.NETStandard.Logging.Writers.dll"/>
       <writer name="File" logWriterType="FileStreamLogWriter" UseBackgroundThreadQueue="true" loadDll="Sara.NETStandard.Logging.Writers.dll">
