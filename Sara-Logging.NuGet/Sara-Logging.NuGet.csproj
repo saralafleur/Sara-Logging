@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>NuGet_Empty</RootNamespace>
-    <Version>1.2.7</Version>
+    <Version>1.2.9</Version>
 	<Package>Sara-Logging</Package>
   </PropertyGroup>
 
